@@ -1,0 +1,193 @@
+{% extends "pagebase.html" %}
+{% load staticfiles %}
+{% block title %}AboutPage{% endblock %}
+
+{% block content %}
+    <div class="banner-w3agile">
+      <div class="container">
+        <h3><a href="index.html">Home</a> / <span>About</span></h3>
+      </div>
+    </div>
+    <!--content-->
+    <div class="content">
+      <!--about-->
+      <div class="about-w3">
+        <div class="container">
+          <h2 class="tittle">About Us</h2>
+          <div class="about-grids">
+            <div class="col-md-6 about-grid">
+             <h4>Curabitur vehicula eros eget porta iaculis.</h4>
+               <p>Vivamus id magna pretium, pretium orci nec, vestibulum enim. Vivamus sed massa porttitor, lacinia tortor a, luctus mi. 
+               Donec sit amet justo sit amet risus malesuada venenatis id ac lacus.Pellentesque sed urna sed dui fermentum vulputate. Nulla facilisi. Mauris eget risus non quam convallis semper non ut turpis.</p>
+              <ul class="grid-part">
+                <li><i class="glyphicon glyphicon-ok-sign"> </i>Praesent vestibulum molestie lacus</li>
+                <li><i class="glyphicon glyphicon-ok-sign"> </i>Donec sagittis interdum tellusplacerat adipiscing</li>
+                <li><i class="glyphicon glyphicon-ok-sign"> </i>Nulla consectetur adipiscing</li>
+              </ul>
+             </div>
+            <div class="col-md-6 video-grid">
+              <iframe src="http://player.youku.com/embed/XODY3NDMzNjY4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <!--about-->
+      <!--What we do-->
+        <div class="what-w3">
+          <div class="container">
+            <h3 class="tittle">What we do</h3>
+            <div class="what-grids">
+              <div class="col-md-6 what-grid">
+                <div class="mask">
+                  <img src="{% static "img/9.jpg" %}" class="img-responsive zoom-img" />
+                </div>
+                <div class="what-bottom">
+                  <h4>Consectetuer Adipiscing</h4>
+                  <p>Donec sagittis interdum tellus sed bibendum. Aen ean fringilla ut lacus eu vehicula. Curabitur non nibh quis nisi vestibulum aliquet non sed dolor. Ut est risus, consectetur sit amet pretium in, cursus in dui. Donec ac rhoncus libero.</p>
+                </div>
+              </div>
+              <div class="col-md-6 what-grid">
+                <div class="what-bottom1">
+                  <h4>Consectetuer Adipiscing</h4>
+                  <p>Donec sagittis interdum tellus sed bibendum. Aen ean fringilla ut lacus eu vehicula. Curabitur non nibh quis nisi vestibulum aliquet non sed dolor. Ut est risus, consectetur sit amet pretium in, cursus in dui. Donec ac rhoncus libero.</p>
+                </div>
+                <div class="mask">
+                  <img src="{% static "img/8.jpg" %}" class="img-responsive zoom-img" />
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      <!--What we do-->
+           <div class="statistics-w3">
+              <div class="container">
+                <h3 class="tittle">Fun Facts</h3>
+                <div class="statistics-grids">
+                  <div class="col-md-3 statistics-grid">
+                    <div class="statistic">
+                      <h4>80%</h4>
+                      <h5>Success Rate</h5>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 statistics-grid">
+                    <div class="statistic">
+                      <h4>85%</h4>
+                      <h5>Happy Students</h5>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 statistics-grid">
+                    <div class="statistic">
+                      <h4>100%</h4>
+                      <h5>Campus Jobsr</h5>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3 statistics-grid">
+                    <div class="statistic">
+                      <h4>95%</h4>
+                      <h5>Awards</h5>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt .</p>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+        <div class="staff-w3l">
+          <div class="container">
+            <h3 class="tittle">Our Staff</h3>
+            <div class="staff-grids">
+              <div class="col-md-6 staff-grid">
+                <div class="staff-left">
+                  <img src="{% static "img/t1.jpg" %}" class="img-responsive" alt="/">
+                </div>
+                <div class="staff-right">
+                  <h4>John Nguyen</h4>
+                  <ul>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+                    <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+                    <li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+                  </ul>
+                  <div class="social-icons">
+                    <a href="#"><i class="icon1"></i></a>
+                    <a href="#"><i class="icon2"></i></a>
+                    <a href="#"><i class="icon3"></i></a>
+                    <a href="#"><i class="icon4"></i></a>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="col-md-6 staff-grid">
+                <div class="staff-left">
+                  <img src="{% static "img/t2.jpg" %}" class="img-responsive" alt="/">
+                </div>
+                <div class="staff-right">
+                  <h4>Sydney Taft</h4>
+                  <ul>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+                    <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+                    <li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+                  </ul>
+                  <div class="social-icons">
+                    <a href="#"><i class="icon1"></i></a>
+                    <a href="#"><i class="icon2"></i></a>
+                    <a href="#"><i class="icon3"></i></a>
+                    <a href="#"><i class="icon4"></i></a>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="staff-grids">
+              <div class="col-md-6 staff-grid">
+                <div class="staff-left">
+                  <img src="{% static "img/t3.jpg" %}" class="img-responsive" alt="/">
+                </div>
+                <div class="staff-right">
+                  <h4>Michael Feng</h4>
+                  <ul>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+                    <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+                    <li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+                  </ul>
+                  <div class="social-icons">
+                    <a href="#"><i class="icon1"></i></a>
+                    <a href="#"><i class="icon2"></i></a>
+                    <a href="#"><i class="icon3"></i></a>
+                    <a href="#"><i class="icon4"></i></a>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="col-md-6 staff-grid">
+                <div class="staff-left">
+                  <img src="{% static "img/t4.jpg" %}" class="img-responsive" alt="/">
+                </div>
+                <div class="staff-right">
+                  <h4>Stacy Barron</h4>
+                  <ul>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+                    <li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
+                    <li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
+                  </ul>
+                  <div class="social-icons">
+                    <a href="#"><i class="icon1"></i></a>
+                    <a href="#"><i class="icon2"></i></a>
+                    <a href="#"><i class="icon3"></i></a>
+                    <a href="#"><i class="icon4"></i></a>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+    </div>  
+    <!--content-->
+{% endblock %}

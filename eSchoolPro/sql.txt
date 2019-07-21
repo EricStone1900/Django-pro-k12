@@ -1,0 +1,15 @@
+1\Users(默认集成djangouser)
+ nicname - 2-20 length *
+ firstName
+ lastName
+ sex   - male female  *
+ headShot(Img)
+ email
+ role - student parent visitor teacher
+ phone
+ birth 
+//自动填一个注册日期
+//兴趣、爱好以后二期做成标签tag供选择一期让用户填 收集数据
+ interest
+ //二期地址选择 现居住地址
+

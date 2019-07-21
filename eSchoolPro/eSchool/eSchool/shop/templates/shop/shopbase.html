@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>{% block title %}My shop{% endblock %}</title>
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{% static 'css/commonstyle.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <div class="detail">
+            <ul>
+              <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> + 1 599-033-5036</li>
+              <li><i class="glyphicon glyphicon-time" aria-hidden="true"></i> Mon-Sat 9:00 Am to 16:00 Pm </li>
+            </ul>
+      </div>
+      <div class="indicate">
+            <p><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>General Pvt 66, Dong Da Hanoi, Vietnam.</p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  <div class="container">
+    <div class="shoplog">
+     <a href="/" class="logo">My shop</a>
+    </div>
+  </div>
+  </div>
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

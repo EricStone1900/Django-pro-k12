@@ -1,0 +1,20 @@
+{% load page_tag %}
+<div class="pagination">
+  <span class="step-links">
+    {% if page.has_previous %}
+        <a href="?page={{ page.previous_page_number}}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+    {% endif %}
+    <span class="current">
+        {%  for pg in page.paginator.page_range %}
+          {% circle_page page.number pg %}
+        {% endfor %}
+    </span>
+      {% if page.has_next %}
+          <a href="?page={{ page.next_page_number }}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+      {% endif %}
+  </span>
+</div>

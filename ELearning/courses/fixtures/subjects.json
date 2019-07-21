@@ -1,0 +1,78 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "subject1",
+    "slug": "subject1-slug"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "subject2",
+    "slug": "subject2-slug"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "class1",
+    "slug": "class1-slug",
+    "overview": "dasdasdsadasdsadasdas",
+    "created": "2019-04-02T01:36:40.786Z"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "subject": 1,
+    "title": "class2",
+    "slug": "class2-slug",
+    "overview": "dadsadsa",
+    "created": "2019-04-02T01:37:39.659Z"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 3,
+  "fields": {
+    "course": 2,
+    "title": "module1",
+    "description": "mclcmldmcmd,s;lc;dls,c"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 4,
+  "fields": {
+    "course": 2,
+    "title": "module2",
+    "description": "cdacjdsmcldsmcdmls"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 5,
+  "fields": {
+    "course": 3,
+    "title": "module1",
+    "description": "cdscfcf"
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 6,
+  "fields": {
+    "course": 3,
+    "title": "module2",
+    "description": "adkpaskdpkoskapdkas"
+  }
+}
+]

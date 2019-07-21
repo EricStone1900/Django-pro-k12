@@ -1,0 +1,20 @@
+{% extends "article/base.html" %}
+{% load article_tags %}
+
+{% block title %}My Blog{% endblock %}
+ 
+{% block content %}
+  <h1>My Blog</h1>
+  {% for article in article_list %}
+    <h2>
+      <a href="">
+        {{ article.title }}
+      </a>
+    </h2>
+    <p class="date">
+      Published {{ article.publish }} by {{ article.author }}
+    </p>
+    {{ article.body|markdown|truncatewords_html:30 }}
+  {% endfor %}
+  {% include "paginationnew.html" with page=article_list %}
+{% endblock %}

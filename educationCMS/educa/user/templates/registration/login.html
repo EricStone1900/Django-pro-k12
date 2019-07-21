@@ -1,0 +1,46 @@
+{% extends "edu_base.html" %}
+{% load staticfiles %}
+
+{% block title %}Log-in{% endblock %}
+
+{% block content %}
+ 	<!-- ##### Breadcumb Area Start ##### -->
+  	<div class="breadcumb-area bg-img" style="background-image: url({% static "img/bg-img/breadcumb.jpg" %});">
+      <div class="bradcumbContent">
+          <h2>Contact Us</h2>
+      </div>
+  	</div>
+  	<!-- ##### Breadcumb Area End ##### -->
+
+     <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-content">
+                        <div class="row">
+                            <!-- Contact Form Area -->
+                            <div class="col-12 col-lg-12">
+                                <div class="contact-form-area wow fadeInUp" data-wow-delay="500ms">
+                                    <form action="." method="post">
+    									{% csrf_token %}
+    									{% for field in login_form %}
+    										{{ field }}
+    										{{ field.errors }}
+    										{% if field.help_text %}
+    											<p class="help text-small text-muted">{{ field.help_text|safe}}</p>
+    										{% endif %}
+    									{% endfor %}
+                                        <button class="btn academy-btn mt-30" type="submit">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+{% endblock %}

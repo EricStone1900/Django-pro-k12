@@ -1,0 +1,1 @@
+Virtualenv location: /Users/songhuangbo/.local/share/virtualenvs/eSchool-fx_M0ARX
